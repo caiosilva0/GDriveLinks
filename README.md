@@ -1,3 +1,3 @@
 # GDriveLinks
-BAIXE TODOS OS ARQUIVOS (INCLUINDO A PASTA "series") E OS COLOQUE NA MESMA PASTA. 
-CASO NÃO FUNCIONE, TEM UM VÍDEO MOSTRANDO O LAYOUT.
+Baixe todos os arquivos e os salve na mesma pasta.
+Caso não funcione, tem um vídeo mostrando o layout.
