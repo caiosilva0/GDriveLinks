@@ -1,0 +1,274 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/pro_dropline.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+.nav { /* toda a div com class=nav */
+	height: 65px; 
+	position: relative; 
+	font-family: verdana;
+	font-size: 11px; 
+	width: 100%; /* tem que tá igual ao outro lá embaixo */
+	z-index: 500;
+	text-align: center;
+}
+
+.nav .table {
+	display: table; /* faz com que a div class=table se comporte como tabela*/
+	margin: auto;
+}
+
+.nav .select {
+	margin: 0; 
+	padding: 0; 
+	list-style: none; /* auto explicativo */
+	display: table-cell; /* importante pra deixar lado a lado */
+	/* serve pra nada nao -> white-space: nowrap; */
+}
+
+.nav li { /* todos os <li> dentro da class=nav */
+	margin: 0; 
+	padding: 0; 
+	height: auto; 
+	float: left;
+}
+
+.nav .select a { /* todos os <a> dentro da class=select que estão dentro da class=nav /// menu principal = mp*/
+	display: block; 
+	height: auto; 
+	float: left;
+	padding: 0 30px 0 30px; /* top right bottom left */
+	text-decoration: none; /* tira a decor dos <a> */
+	line-height: 35px; /* altura do texto dentro do mp*/
+	/* serve pra nada nao -> white-space: nowrap; */
+	color: yellow;
+	background-color: black; /* fundo do mp */
+}
+
+.nav .select a:hover, .nav .select li:hover a { /* quando passar o mouse nos <a> e <li> */
+	padding: 0 0 0 15px; /* top right bottom left */
+	cursor: pointer; /* ponteiro do mouse -- uma penca de opcao */
+	background-color: #212121;  /* fundo quando passa o mouse por cima do menu principal */
+}
+
+.nav .select a:hover b, .nav .select li:hover a b { /* nao entendi, mas fica melhor com isso */
+	display: block; 
+	float: left; 
+	padding: 0 30px 0 15px; /* top right bottom left */
+	cursor: pointer;
+}
+
+.nav .select_sub { /* organiza o submenu principal */
+	display: none;
+
+	height: 50px;
+}
+
+.nav .sub { /* mostra as sub opcoes como tabela bonitinha */
+	display: table; 
+	margin: 0 auto; 
+	padding: 0; 
+	list-style: none;
+}
+
+.nav .select :hover .select_sub, .nav .current .show { /* mostra as sub opcoes */
+	display: block; 
+	position: absolute; 
+	width: 100%; /* tem que tá igual ao outro lá em cima */
+	top: 35px; 
+	padding: 0; 
+	z-index: 100; 
+	left: 0; 
+	text-align: center;
+	font-size: 13px;
+	font-family: verdana;
+}
+
+.nav .select :hover .sub li a, .nav .current .show .sub li a {
+	display: block; 
+	float: left; 
+	background: black; /* background das sub opcoes */
+	padding: 0 10px 0 10px; /* top right bottom left */
+	margin: 0; 
+	/* serve pra nada nao -> white-space: nowrap; */ 
+	border: 0; 
+	color: yellow;
+}
+
+.nav .select :hover .sub li a:hover, .nav .current .sub li a:hover {
+	visibility: visible; 
+	background-color: #212121; /* background das sub opcoes quando o mouse passa */
+}
+
+/* ================================================================ 
+					End of copyright notice (menu)
+=================================================================== */
+
+/* ================================================================ 
+						BEGIN OF YURI
+=================================================================== */
+
+body {
+	margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0;
+    background: #9139C6;
+  	font-family: 'Open Sans', sans-serif;
+}
+
+.banner_img {
+	width: 100%;
+	height: 300px; /* o mesmo da imagem lá no html */
+	text-align: center;
+}
+
+/* ================================================================ 
+							Search bar
+=================================================================== */
+
+.wrap {
+  width: 18%;
+  position: absolute;
+  top: 30%;
+  left: 91%;
+  transform: translate(-50%, -50%);
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* ================================================================ 
+						End of earch bar (#4B39C6 - purpleish)
+=================================================================== */
+
+a {
+	text-decoration: none; /* tira o sublinhado */
+	color: black;
+}
+
+.content-main {
+	width: 720px;
+	height: 100%;
+	float: left; /* lado a lado com a side-bar */
+	margin-top: 20px;
+	background-color: #f5f5dc;
+	
+	
+}
+
+.entry { /* NAO MEXER NUNCA */
+	margin-bottom: 60%;
+
+
+}
+
+.container {
+	margin: 10px 6px 15px 6px;
+	background-color: #f5f5f5;
+	border-style: inset;
+}
+
+.titulo{
+	padding: 0;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+}
+
+.poster {
+	height: 330px;
+	width: 250px;
+	float: left;
+	margin: 6px 16px 16px 10px;
+}
+
+.texto {
+	float: right;
+	padding-top: 0%;
+	padding-right: 5%;
+	margin-right: 15px;
+	line-height: 15px;
+}
+
+.saiba-p {
+	background-color: black;
+	
+	width: 25%;
+	height: 25%;
+	
+	float: right;
+	
+	margin-top: 9%;
+	margin-right: 5%;
+	margin-top: 1%;
+	
+	padding-top: 2%;
+	padding-bottom: 2%;
+
+	text-align: left;
+	
+	border-radius: 10px;
+}
+
+.btn {
+	margin-left: 15%;
+	width: 100%;
+	padding-left: 10%;
+	padding-right: 20%;
+	text-align: center;
+	color: white;
+}
+
+
+
+
+
+.side-bar {
+	float: right;
+	background-color: yellow;
+	width: 350px;
+	margin-top: 20px;
+	padding-left: 10px;
+}
+
+
+
+
